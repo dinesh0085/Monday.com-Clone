@@ -68,7 +68,7 @@ const custemerLogo = [
 function FirstPart() {
   return (
     <>
-    <Box border="1px solid" bg="#010235" color="white">
+    <Box border="1px solid" bg="#101049" color="white">
       <Heading marginTop="50px" fontWeight="medium" fontSize="80px">
         A platform built for a <br />
         new way of working
@@ -80,20 +80,25 @@ function FirstPart() {
       <HStack justifyContent="center" marginTop="50px" marginBottom="20px">
         {OsBox.map((el) => {
           return (
+            <Checkbox colorScheme="cyan"  p="5px"
+            width="130px"
+            height="140px"
+            border="1px"
+            rounded="md"
+            borderColor="grey">
             <Box
-              p="5px"
-              width="120px"
-              height="140px"
-              border="1px"
-              rounded="md"
-              borderColor="grey"
+         
             >
+                
               <VStack>
-                <Checkbox colorScheme="cyan"></Checkbox>
+               
                 <Img width="50px" src={el.img}></Img>
                 <Text>{el.text}</Text>
+                
               </VStack>
+          
             </Box>
+            </Checkbox>
           );
         })}
       </HStack>

@@ -3,7 +3,7 @@ import {ArrowForwardIcon,ChevronDownIcon,ChevronUpIcon} from "@chakra-ui/icons"
 import { Link } from "react-router-dom";
 function Navbar() {
   return (
-    <Box border="1px solid" fontSize="18px" color="grey">
+    <Box  border="1px solid" fontSize="18px" color="grey">
       <Flex>
         <HStack p="0px">
           <Box p="4">
