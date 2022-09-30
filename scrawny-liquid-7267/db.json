@@ -1,0 +1,52 @@
+{
+  "signupData": [
+    {
+      "id": 1,
+      "name": "Solanki Dinesh N",
+      "email": "jdsolankijd123@gmail.com",
+      "password": "Dinesh123"
+    },
+    {
+      "name": "Solanki DineshKumar",
+      "email": "eve.holt@reqres.in",
+      "password": "1234567",
+      "id": 2
+    },
+    {
+      "name": "Solanki DineshKumar",
+      "email": "eve.holt@reqres.in",
+      "password": "1234567",
+      "id": 3
+    },
+    {
+      "name": "Solanki Pankaj",
+      "email": "jdsonkijd123@gmail.com",
+      "password": "12345678",
+      "id": 4
+    },
+    {
+      "name": "Solanki Dinesh n",
+      "email": "jdjd123@gmail.com",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "name": "mayur",
+      "email": "mayur@gmail.com",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "name": "Dinesh Solanki",
+      "email": "solanki.dinesh.0085@gmail.com",
+      "password": "12345",
+      "id": 7
+    },
+    {
+      "name": " Solanki",
+      "email": "lankijd123@gmail.com",
+      "password": "34242342",
+      "id": 8
+    }
+  ]
+}

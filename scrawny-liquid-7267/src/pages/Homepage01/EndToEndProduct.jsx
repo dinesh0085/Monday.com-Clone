@@ -3,6 +3,7 @@ import { useState } from "react";
 import {CheckIcon,ArrowForwardIcon} from "@chakra-ui/icons"
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
+import SignUp from "../Signup";
 const workFlowObj = [
     {
       title: "https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/Mobile/Work_management1.png",
@@ -113,23 +114,29 @@ the core of your business
             return <Box display="flex" justifyContent={"flex-start"}><CheckIcon color={current.color}/>  {el}</Box>
           })}
           </Box>
+
+          {/* <SignUp
+              Padding="25px"
+              radius="3rem"
+              MarginTop="20px"
+              backgroundC="#16b690"
+              color="white"
+              FontWeight="midium"
+              FontSize="20px"
+            /> */}
        
-          <Link to="/signup">
-            {" "}
-            <Button
-              p="20px"
+         
+            <SignUp
+              Padding="20px"
               rounded="3rem"
-              marginTop="50px"
-              bg="white"
+              MarginTop="50px"
+              backgroundC="white"
               color="black"
-              fontWeight="midium"
-              fontSize="20px"
-              border="1px solid"
-            >
-              Get Started
-              <ArrowForwardIcon />
-            </Button>
-          </Link>
+              FontWeight="midium"
+              FontSize="20px"
+              Border="1px solid"
+            />
+             
 
         </Box>
 
