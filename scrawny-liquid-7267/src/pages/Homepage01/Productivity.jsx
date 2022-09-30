@@ -11,6 +11,7 @@ import {
 import ReactPlayer from "react-player";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
+import SignUp from "../Signup";
 
 function Productivity() {
   return (
@@ -25,21 +26,28 @@ function Productivity() {
             Boost your team’s alignment, efficiency, and productivity by
             customizing any workflow to fit your needs.
           </Text>
-          <Link to="/signup">
-            {" "}
-            <Button
-              p="25px"
-              rounded="3rem"
-              marginTop="20px"
-              bg="#16b690"
+
+          {/*  <SignUp
+          Padding="25px"
+          radius="3rem"
+          MarginTop="30px"
+          backgroundC="#16b690"
+          color="white"
+          FontWeight="midium"
+          FontSize="20px"
+        /> */}
+          
+            <SignUp
+              Padding="25px"
+              radius="3rem"
+              MarginTop="20px"
+              backgroundC="#16b690"
               color="white"
-              fontWeight="midium"
-              fontSize="20px"
-            >
-              Get Started
-              <ArrowForwardIcon />
-            </Button>
-          </Link>
+              FontWeight="midium"
+              FontSize="20px"
+            />
+            
+         
         </VStack>
       </HStack>
 
@@ -110,21 +118,15 @@ reach your goals, faster</Heading>
             Get a high-level overview of your organization with customizable dashboards. Make confident decisions and easily scale workflows for your evolving needs.
             </Text>
 
-            <Link to="/signup">
-            {" "}
-            <Button
-              p="25px"
-              rounded="3rem"
-              marginTop="20px"
-              bg="#16b690"
+            <SignUp
+              Padding="25px"
+              radius="3rem"
+              MarginTop="20px"
+              backgroundC="#16b690"
               color="white"
-              fontWeight="midium"
-              fontSize="20px"
-            >
-              Get Started
-              <ArrowForwardIcon />
-            </Button>
-          </Link>
+              FontWeight="midium"
+              FontSize="20px"
+            />
 
           </Box>
 

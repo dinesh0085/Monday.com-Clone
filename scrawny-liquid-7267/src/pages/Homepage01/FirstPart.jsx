@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
+import SignUp from "../Signup";
 
 const OsBox = [
   {
@@ -103,21 +104,17 @@ function FirstPart() {
         })}
       </HStack>
 
-      <Link to="/signup">
-        {" "}
-        <Button
-          p="25px"
-          rounded="3rem"
-          marginTop="50px"
-          bg="#16b690"
+    
+        <SignUp
+          Padding="25px"
+          radius="3rem"
+          MarginTop="30px"
+          backgroundC="#16b690"
           color="white"
-          fontWeight="midium"
-          fontSize="20px"
-        >
-          Get Started
-          <ArrowForwardIcon />
-        </Button>
-      </Link>
+          FontWeight="midium"
+          FontSize="20px"
+        />
+       
       <Text marginTop={"20px"} fontSize="13px">
         No credit card needed ✦ Unlimited time on Free plan
       </Text>

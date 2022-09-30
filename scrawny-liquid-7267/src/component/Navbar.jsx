@@ -1,7 +1,12 @@
-import { Box, Flex, HStack, Img, Menu, MenuButton, MenuItem, MenuList, Spacer, Text, Button } from "@chakra-ui/react";
+import { Box, Flex, HStack, Img, Menu, MenuButton, MenuItem, MenuList, Spacer, Text, Button, useDisclosure } from "@chakra-ui/react";
 import {ArrowForwardIcon,ChevronDownIcon,ChevronUpIcon} from "@chakra-ui/icons"
 import { Link } from "react-router-dom";
+import { useRef } from "react";
+import SignUp from "../pages/Signup";
 function Navbar() {
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const btnRef = useRef()
+
   return (
     <Box  border="1px solid" fontSize="18px" color="grey">
       <Flex>
@@ -130,7 +135,10 @@ function Navbar() {
          <Link to="/login"> Login </Link>
         </Box>
         <Box p="4" >
-        <Link to="/signup">  <Button bg="blue.400" color="white">Get Started<ArrowForwardIcon/></Button></Link>
+        <SignUp
+        color="white"
+        radius="1rem"
+        backgroundC="blue.400"></SignUp>
         </Box>
         </HStack>
       </Flex>
