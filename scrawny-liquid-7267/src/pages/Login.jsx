@@ -2,6 +2,7 @@ import { Box,Text, Button, FormControl, Heading, Img, Input, Container } from "@
 import { useContext } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { Navigate, NavLink, useNavigate } from "react-router-dom";
 import { AuthContent } from "../context/AuthContent";
 
 const initialUserData={
@@ -11,10 +12,14 @@ const initialUserData={
 
 function Login(){
     const {loginUser,logoutUser,isAuth} = useContext(AuthContent)
+    const navlink=useNavigate()
+   
 
 
     const [usersData,setUsersData] = useState([])
     const [userData,setUserData] = useState(initialUserData);
+
+   
 
     useEffect(()=>{
      fetch(`http://localhost:8000/signupData`).then((res)=>(res.json()))
@@ -35,7 +40,7 @@ function Login(){
      
     usersData.map((el)=>{
         if(el.email===userData.email && el.password===userData.password){
-            loginUser()
+            loginUser(el.name)
             alert("Login successfull")
 
 
@@ -44,6 +49,10 @@ function Login(){
 
      setUserData(initialUserData)
 
+    }
+
+    if(isAuth){
+        navlink("/home")
     }
 
 

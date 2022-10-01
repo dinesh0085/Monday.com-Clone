@@ -152,7 +152,7 @@ the core of your business
 
 </Box>
 <Box marginTop="-1px" bg="#0f1048">
-<ReactPlayer width="100vw" loop playing url="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/products_video.mp4"></ReactPlayer>
+<ReactPlayer width="100%" loop playing url="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/products_video.mp4"></ReactPlayer>
 </Box>
 <Img width="100%" src="https://i.ibb.co/qpfTm9s/homepage09.png"></Img>
 </>

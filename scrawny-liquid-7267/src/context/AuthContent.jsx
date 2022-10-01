@@ -6,9 +6,11 @@ export const AuthContent=createContext();
 
 export default function AuthContentProvider({children}){
     const [isAuth,setIsAuth] = useState(false);
+    const [name,setName] = useState("")
 
-    const loginUser=()=>{
+    const loginUser=(value)=>{
         setIsAuth(true)
+        setName(value)
     }
 
     const logoutUser=()=>{
@@ -17,7 +19,7 @@ export default function AuthContentProvider({children}){
 
     return (
         <AuthContent.Provider
-        value={{loginUser,logoutUser,isAuth}}>
+        value={{name,loginUser,logoutUser,isAuth}}>
             {children}
         </AuthContent.Provider>
     )
