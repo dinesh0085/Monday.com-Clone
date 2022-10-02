@@ -1,6 +1,7 @@
 {
   "name": "scrawny-liquid-7267",
   "version": "0.1.0",
+  "main": "server.js",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.10",
