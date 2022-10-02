@@ -155,6 +155,37 @@ the core of your business
 <ReactPlayer width="100%" loop playing url="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/products_video.mp4"></ReactPlayer>
 </Box>
 <Img width="100%" src="https://i.ibb.co/qpfTm9s/homepage09.png"></Img>
+
+<Box display={"flex"} justifyContent="center" alignItems={"center"}>
+  <Img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/stars.png"></Img>
+</Box>
+
+<Box>
+
+        <Heading width="100%" margin="auto" marginTop="20px" fontSize="40px">
+        Deliver your best work with monday.com
+      </Heading>
+     
+
+
+      
+       
+      <Text marginTop={"20px"} fontSize="13px">
+        No credit card needed ✦ Unlimited time on Free plan
+      </Text>
+      <SignUp
+          Padding="25px"
+          radius="3rem"
+          MarginTop="30px"
+          backgroundC="#16b690"
+          color="white"
+          FontWeight="midium"
+          FontSize="20px"
+        />
+      </Box>
+
+      
+
 </>
 )
 }

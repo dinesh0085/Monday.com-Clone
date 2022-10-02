@@ -59,6 +59,12 @@
       "email": "jdsolankijd123@gmail.com",
       "password": "1234",
       "id": 10
+    },
+    {
+      "name": "Dinesh",
+      "email": "jdsolankijd123@gmail.com",
+      "password": "11111",
+      "id": 11
     }
   ]
 }
